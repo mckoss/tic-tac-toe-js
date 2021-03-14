@@ -1,4 +1,4 @@
-Sample tic-tac-toe playing program in JavaScript.
+# Sample tic-tac-toe playing program in JavaScript.
 
 See Code with Me YouTube videos:
 
