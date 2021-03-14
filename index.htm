@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <script src="tic-tac-toe.js"></script>
+        <script src="tic-tac-toe-ui.js"></script>
+        <style>
+            body {
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 80px;
+            }
+
+            div.announce {
+                font-size: 80px;
+            }
+
+            table {
+              margin: 20px auto;
+              font-size: 64px;
+              border-collapse: collapse;
+            }
+            
+            td {
+              width: 80px;
+              height: 80px;
+              text-align: center;
+              cursor: hand;
+              user-select: none;
+            }
+            
+            td.center, td.right {
+              border-left:3px solid black;
+            }
+            
+            td.middle, td.bottom {
+              border-top:3px solid black;
+            }
+
+            button {
+                font-size: 24px;
+                margin: 20px auto;
+            }
+          </style>
+    </head>
+    <body>
+        <h1>Tic Tac Toe</h1>
+        <table> 
+            <tr><td class="top left"></td><td class="top center"></td><td class="top right"></td></tr>
+            <tr><td class="middle left"></td><td class="middle center"></td><td class="middle right"></td></tr>
+            <tr><td class="bottom left"></td><td class="bottom center"></td><td class="bottom right"></td></tr>
+          </table>
+          <div class="announce"></div>
+          <button onClick="restartGame()">Restart Game</button>
+          <br/>
+          <button onClick="computerMoves()">Computer Moves</button>
+    </body>
+</html>
